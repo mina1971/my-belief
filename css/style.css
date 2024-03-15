@@ -1,0 +1,266 @@
+body{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+@font-face{
+    src: url(../fonts/Cairo-Regular.ttf);
+    font-family: ar-font;
+   }
+   
+   body {
+     font-family: ar-font;
+     direction: rtl;
+     
+   }
+  
+nav.navbar ul.navbar-nav {
+  flex-direction: row; /* row*/
+  
+}
+nav.navbar .navbar-brand{
+  color: rgb(158, 6, 6);
+  font-weight: bolder;
+  
+}
+nav.navbar .navbar-brand img{
+  
+  padding-bottom: 8px;
+}
+
+nav.navbar ul.navbar-nav li a.nav-link {
+  color: rgb(66, 35, 243);
+  font-size: 18px;
+  line-height: 40px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  transition: all 0.5s ease;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+nav.navbar ul.navbar-nav li a.nav-link:hover,
+nav.navbar ul.navbar-nav li a.nav-link.active {
+  background-color: rgb(230, 230, 25);
+  color: black;
+} 
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link {
+  color: black;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:hover,
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:active {
+  color: rgb(51, 16, 133);
+  background-color: rgb(241, 234, 231);
+}
+
+nav.navbar.noTransparrent {
+  background-color: rgb(60, 18, 139);
+  border-bottom: 1px solid #d4aeae;
+}
+/*Finish style NavBar*/
+
+
+/*Start style Header*/
+header {
+  background-image: url(../img/bg2.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+header .MainCard {
+  background-color: rgba(227, 233, 168, 0.3);
+  color: rgb(211, 12, 12);
+  transform: translateY(20%);
+  padding: 3% 10%;
+  border-radius: 15px;
+  
+}
+
+header .MainCard img {
+  border: 5px solid rgba(39, 39, 39, 0.8);
+  margin-bottom: 20px;
+}
+
+header .MainCard h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(151, 5, 5);
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+header .MainCard h1 span {
+  font-size: 22px;
+}
+
+header .MainCard ul {
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+
+header .MainCard ul li {
+  margin-right: 10px;
+}
+
+
+header .MainCard ul li a {
+  font-size: 24px;
+  color: rgb(47, 21, 163);
+  background-color: rgba(184, 224, 240, 0.8);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  border-radius: 50% ;
+}
+
+header .MainCard ul li a:hover {
+  background-color: black;
+  transition: all .7s ease;
+}
+
+header .MainCard h2 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+
+header .MainCard p {
+  font-size: 18px;
+  line-height: 30px;
+  color: black;
+  margin-bottom: 40px;
+}
+
+header .MainCard > a {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  padding: 10px 15px;
+}
+
+header .MainCard  a:hover {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+/*start section notwrite*/
+section.notwrite{
+  background-color: #bad8f0; 
+  text-align: right; 
+}
+/*end section notwrite*/
+.main-lable img{
+  position: absolute;
+  margin-left: 50px;
+}
+@media (max-width: 767px) {
+  nav.navbar {
+      min-height: 80px;
+  }
+
+  nav.navbar .container {
+      width: 100%;
+      
+  }
+
+  nav.navbar.noTransparrent button.navbar-toggler {
+      margin: 15px auto;
+  }
+  nav.navbar ul.navbar-nav {
+    flex-direction: column;  
+}
+
+} 
+
+
+/*******************************/
+/********* Pricing CSS *********/
+/*******************************/
+.notwrite .price h1{
+  color: rgb(53, 24, 214);
+  margin-top: 0px;
+}
+
+.price {
+  position: relative;
+  width: 100%;
+  padding: 10px 0 15px 0;
+  background-color: antiquewhite;
+  padding-bottom: 80px;
+  margin-top: 0;
+}
+
+.price .price-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-bottom: 30px;
+  background: rgba(29, 36, 52, .04);
+  transition: .3s;
+}
+
+.price .price-item:hover {
+  background: #D5B981;
+}
+
+.price .price-img {
+  position: relative;
+  width: 100px;
+}
+
+.price .price-img img {
+  width: 100%;
+}
+
+.price .price-img::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  z-index: 1;
+}
+
+.price .price-text {
+  position: relative;
+  padding: 0 15px;
+  width: calc(100% - 100px);
+  overflow: hidden;
+}
+
+.price .price-text h2 {
+  position: relative;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.price .price-text h3 {
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+}
+
